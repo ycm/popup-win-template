@@ -43,3 +43,4 @@ new(lines: list<any>, opts: dict<any> = {})
 **notes**
 
 - uses `popup_create(..., {cursorline: true})`, which overrides text properties in `props`; might be good idea to clear either `fg` or `bg` attr of `PMenuSel`
+- on text expand (more lines are added): scroll/cursorline position is unchanged

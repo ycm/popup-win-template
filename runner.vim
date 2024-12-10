@@ -55,7 +55,7 @@ var lines = [
     '50. Sed nunc nibh, accumsan vel congue quis, imperdiet sit amet orci.' # }}}
 ]
 
-var win = util.SmartScrollPopup.new(lines)
+var win = util.SmartScrollPopup.new(lines[: 19])
 
 command! Pop win.Show()
 
