@@ -1,6 +1,6 @@
 vim9script
 
-import "./poputil.vim" as util
+import "./scroller.vim"
 
 var lines = [
     '1. Nulla facilisi.', # {{{
@@ -55,7 +55,7 @@ var lines = [
     '50. Sed nunc nibh, accumsan vel congue quis, imperdiet sit amet orci.' # }}}
 ]
 
-var win = util.SmartScrollPopup.new(lines[: 19])
+var win = scroller.Scroller.new(lines[: 19])
 
 command! Pop win.Show()
 
